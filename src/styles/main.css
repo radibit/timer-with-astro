@@ -2,8 +2,9 @@
 
 @font-face {
   font-family: 'bebas';
-  src: url('../../public/fonts/bebasneue-book-webfont.woff') format('woff'),
-    url('../../public/fonts/bebasneue-book-webfont.woff2') format('woff2');
+  src: url('/fonts/bebasneue-book-webfont.woff') format('woff'),
+    url('/fonts/bebasneue-book-webfont.woff2') format('woff2');
+  font-display: swap;
 }
 
 *,
@@ -63,4 +64,14 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+}
+
+.u-visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }

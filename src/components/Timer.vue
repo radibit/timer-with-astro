@@ -17,7 +17,9 @@
   <div class="timer">
     <div class="time">
       <div class="minutes">
+        <label for="timer-minutes" class="u-visually-hidden">Timer minutes</label>
         <input
+          id="timer-minutes"
           class="u-no-border u-no-background"
           type="number"
           ref="inputMinutes"
@@ -30,7 +32,9 @@
       </div>
       <div class="colon">:</div>
       <div class="seconds">
+        <label for="timer-seconds" class="u-visually-hidden">Timer seconds</label>
         <input
+          id="timer-seconds"
           class="u-no-border u-no-background"
           type="number"
           v-model="seconds"
@@ -49,7 +53,7 @@
       {{ toggleTimerLabel }}
     </button>
     <button class="settings u-no-border u-no-background" @click="setTime()">
-      <img src="images/gear.svg" alt="Settings" />
+      <img src="images/gear.svg" width="32" height="32" alt="Settings" />
     </button>
   </div>
 </template>
@@ -157,7 +161,6 @@ export default {
   width: 500px;
   z-index: 2;
   background: linear-gradient(225deg, #2e2d33, #27262b);
-  box-shadow: -41px 41px 82px #252429, 41px -41px 82px #313037;
 }
 
 .time {
