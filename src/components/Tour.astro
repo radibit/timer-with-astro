@@ -1,0 +1,103 @@
+---
+import { Markdown } from 'astro/components';
+---
+<article>
+  <section>
+    <Markdown>
+        ## 🚀 Astro Timer // Project Structure
+
+        Inside of our Astro Timer project, you'll see the following folders and files:
+
+        ```
+        /
+        ├── public/
+        │   ├── fonts/
+        │   ├── robots.txt
+        │   └── favicon.ico
+        ├── src/
+        │   ├── components/
+        │   │   ├── Timer.vue
+        │   │   └── Tour.astro
+        │   ├── pages/
+        │   │   └── index.astro
+        │   └── styles/
+        │       └── main.css
+        └── package.json
+        ```
+
+        Astro looks for `.astro` or `.md` files in the `src/pages/` directory.
+        Each page is exposed as a route based on its file name.
+
+        There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+        Any static assets, like images, can be placed in the `public/` directory.
+    </Markdown>
+  </section>
+
+  <section>
+    <h2>👀 Keep scrolling 👇</h2>
+  </section>
+</article>
+
+<style>
+  a {
+    color: inherit;
+  }
+
+  header > div {
+    font-size: clamp(2rem, -0.4742rem + 6.1856vw, 2.75rem);
+  }
+
+  header > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  header img {
+    width: 2em;
+    height: 2.667em;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: clamp(1.5rem, 1rem + 1.25vw, 2rem);
+  }
+
+  article {
+    padding-top: 2em;
+    line-height: 1.5;
+  }
+  section {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 70ch;
+  }
+
+  pre,
+  code {
+    font-family: var(--font-family-mono);
+    background: #1f2937;
+    border-radius: 4px;
+  }
+
+  pre {
+    padding: 1em 1.5em;
+  }
+
+  .tree {
+    line-height: 1.2;
+  }
+
+  code:not(.tree) {
+    padding: 0.125em;
+    margin: 0 -0.125em;
+  }
+</style>

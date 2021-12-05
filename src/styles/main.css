@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'bebas';
+  src: url('../../public/fonts/bebasneue-book-webfont.woff') format('woff'),
+    url('../../public/fonts/bebasneue-book-webfont.woff2') format('woff2');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #2b2a30;
+  --color-text: #ffffff;
+  --font-family-primary: 'bebas';
+  --font-family-secondary: 'Montserrat';
+  --font-family-mono: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+}
+
+body {
+  background: var(--color-primary);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: var(--font-family-secondary);
+}
+
+.wrapper {
+  border-radius: 50%;
+  box-shadow: -5px 14px 44px #000000, 5px -16px 50px rgba(255, 255, 255, 0.15);
+
+  height: 518px;
+  width: 518px;
+  position: relative;
+}
+
+/* Utils */
+.u-no-border {
+  border: 0;
+}
+
+.u-no-background {
+  background: none;
+}
+
+.u-margin-bottom-xxl {
+  margin-bottom: 400px;
+}
+
+.u-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-flex-center--column {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}

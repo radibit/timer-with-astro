@@ -1,0 +1,26 @@
+---
+import Tour from '../components/Tour.astro';
+import Timer from '../components/Timer.vue';
+---
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width" />
+  <title>🎄☃️🎅 | Astro Timer</title>
+  <link rel="stylesheet" type="text/css"
+    href={Astro.resolve('../styles/main.css')} />
+</head>
+
+<body class="u-flex-center--column">
+  <div class="u-margin-bottom-xxl">
+    <Tour />
+  </div>
+  <div class="wrapper u-flex-center u-margin-bottom-xxl">
+    <Timer client:visible />
+  </div>
+</body>
+
+</html>
