@@ -1,6 +1,6 @@
 # ⏲️ Astro Timer
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/radibit/astro-timer/tree/latest)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/radibit/timer-with-astro/)
 
 ## 🚀 Project Structure
 
